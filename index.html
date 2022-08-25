@@ -12,8 +12,6 @@
 </head>
 
 <body>
-  <!-- NAV BAR -->
-
   <!-- TITILE DIV -->
   <div id="titleDiv" style="overflow:hidden;">
     <div id="topTitleDiv">
@@ -44,7 +42,6 @@
     </div>
   </div>
 
-
   <div id="menuDiv" style="overflow:hidden;">
     <center>
       <h3>Menu</h3>
@@ -69,7 +66,6 @@
           </li>
         </ul>
       </nav>
-
     </div>
     <div id="map"></div>
   </div>
@@ -78,18 +74,15 @@
 
   <div id="gallDiv">
     <center>
-    <h3>Our shop</h3>
-    <!-- <img style="height:100%; max-height: 400px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal1.png" alt="poster Advertisement"> -->
-    <!-- <img style="height:100%; max-height: 400px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal2.jpg" alt="poster Advertisement"> -->
-    <!-- <br> -->
-    <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal180.jpeg" alt="ice cream pictures">
-    <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal181.png" alt="ice cream pictures">
-    <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal186.jpeg" alt="ice cream pictures">
-    <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal185.jpeg" alt="ice cream pictures">
-    <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal172.jpg" alt="ice cream pictures">
-    <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal173.jpg" alt="ice cream pictures">
-    <img style="height:100%; max-height: 500px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal174.jpeg" alt="ice cream pictures">
-  </center>
+      <h3>Our shop</h3>
+      <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal180.jpeg" alt="ice cream pictures">
+      <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal181.png" alt="ice cream pictures">
+      <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal186.jpeg" alt="ice cream pictures">
+      <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal185.jpeg" alt="ice cream pictures">
+      <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal172.jpg" alt="ice cream pictures">
+      <img style="height:100%; max-height: 200px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal173.jpg" alt="ice cream pictures">
+      <img style="height:100%; max-height: 500px; border:5px solid var(--white); height:auto; margin:0; padding:0;" src="gal174.jpeg" alt="ice cream pictures">
+    </center>
   </div>
 
   <div id="melt" style="background-color:var(--green);"></div>
@@ -102,12 +95,11 @@
       <h4>Don't ignore climate change!</h4>
       <h3 style="color:var(--green);">One Scoop, One World</h3>
     </div>
-    <div id="aboutImg">
-    </div>
+    <div id="aboutImg"></div>
   </div>
 
-
-  <!-- The Modal -->
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/742875113?h=ecf2321220&autoplay=1&loop=1&color=ebaaba&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  
   <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
@@ -115,10 +107,9 @@
   </div>
 
   <script type="text/javascript">
-    // Get the modal
+  //INLARGE MENU WHEN CLICKED
     var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    
     var img = document.getElementById("myImg");
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -128,31 +119,28 @@
       captionText.innerHTML = this.alt;
     }
 
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
     }
-
+    
+// SMOOTH SCROLL
     window.scroll({
       top: 2500,
       left: 0,
       behavior: 'smooth'
     });
-    // Scroll certain amounts from current position
+
     window.scrollBy({
       top: 100, // could be negative value
       left: 0,
       behavior: 'smooth'
     });
-    // Scroll to a certain element
+
     document.querySelector('.hello').scrollIntoView({
       behavior: 'smooth'
     });
-    // IMAGE
   </script>
 </body>
-
 </html>
