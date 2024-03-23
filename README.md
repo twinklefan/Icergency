@@ -1,10 +1,8 @@
 # Icergency
 One Scoop - One World
 
-small school project to make a brand, so this is Icergency
+-school project
 
-This is not a mobile friendly website and also doesn't work that well on screens too big.
-I designed it to a surface go 2 screen, which is quite small.
-
+only tested on smaller computer screens, doesnt work on mobile 
 
 website: https://twinklefan.github.io/Icergency/
